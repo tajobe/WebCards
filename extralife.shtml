@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--#include file="content/templates/head.html"-->
+		<base target="_blank" />
+		<title>Extra-Life | WebCards</title>
+	</head>
+
+	<body onload="loadCards()">
+		<div id="topMenu">
+			<span><a href="/" target="_self">WebCards</a> &#62; Extra-Life</span>
+		</div>
+		<div id="cards">
+			<ul class="gNow even">
+				<li>
+					<div class="card even startExpanded" id="Details">
+						<!--#include file="content/cards/extra-life/details.html"-->
+					</div>
+				</li>
+			</ul>
+			<ul class="gNow even">
+				<li>
+					<div class="card even" id="Taylor">
+						<!--#include file="content/cards/extra-life/taylor.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card even" id="Rainbow">
+						<!--#include file="content/cards/extra-life/rainbow.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card even" id="Dylan">
+						<!--#include file="content/cards/extra-life/dylan.html"-->
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--#include file="content/templates/footer.html"-->
+	</body>
+</html>

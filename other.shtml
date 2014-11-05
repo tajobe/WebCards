@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--#include file="content/templates/head.html"-->
+		<base target="_blank" />
+		<title>Other Page | WebCards</title>
+	</head>
+
+	<body onload="loadCards()">
+		<div id="topMenu">
+			<span><a href="/" target="_self">WebCards</a> &#62; Other</span>
+		</div>
+		<div id="cards">
+			<ul class="gNow even">
+				<li>
+					<div class="card even" id="Something">
+						<!--#include file="content/cards/other/Something.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card even" id="SomethingElse">
+						<!--#include file="content/cards/other/SomethingElse.html"-->
+					</div>
+				</li>
+			</ul>
+			<ul class="gNow even">
+				<li>
+					<div class="card even" id="Other">
+						<!--#include file="content/cards/other/Other.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card even" id="Another">
+						<!--#include file="content/cards/other/Another.html"-->
+					</div>
+				</li>
+		</div>
+		
+		<!--#include file="content/templates/footer.html"-->
+	</body>
+</html>

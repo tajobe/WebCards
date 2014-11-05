@@ -1,0 +1,9 @@
+# Using mod_rewrite
+RewriteEngine On
+
+# This is our document root.
+RewriteBase /
+
+# rewrite page to page.shtml
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(other|extralife)$ $1.shtml

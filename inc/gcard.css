@@ -1,0 +1,248 @@
+/**
+ * Card UI in the style of "Google Now"
+ */
+body {
+	background: #e5e5e5;
+	min-height: 100%;
+	margin: auto;
+}
+
+div#topMenu {
+	background: #2d2d2d url('images/logo_small.png') no-repeat left top;
+	width: 100%;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	border-bottom: 1px solid black;
+	display: block;
+	font-family: Arial, sans-serif;
+	color: #dddddd;
+}
+
+div#topMenu a {
+	color: #cdcdcd;
+	text-decoration: none;
+}
+
+div#topMenu span {
+	font-size: 16px;
+	line-height: 20px;
+	padding-left: 25px;
+	padding-top: 5px;
+}
+
+div#cards {
+	margin: 0 auto;
+}
+
+ul.gNow, table.gNow {
+	height: 100%;
+	float: left;
+	padding: 0;
+	margin-top: 35px;
+}
+
+gNow.primary {
+	width: 550px;
+}
+
+gNow.even {
+	width: 450px;
+}
+
+gNow.secondary {
+	width: 350px;
+}
+
+ul.gNow li, table.gNow td {
+	list-style: none;
+	border: 0;
+	padding: 10px;
+}
+
+ul.gNow.card ul {
+	float: none;
+	list-style: square outside none
+}
+
+div.card {
+	background: #ffffff;
+	position: relative;
+	padding: 15px;
+	box-shadow: 0px 3px rgba( 0, 0, 0, 0.1 );
+	font-family: Open Sans;
+	color: #444;
+	font-size: 14px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #BBBBBB;
+	border-radius: 2px;
+	overflow: hidden;
+	
+	/* transition */
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+div.card.primary {
+	width: 500px;
+}
+
+div.card.even {
+	width: 400px;
+}
+
+div.card.secondary {
+	width: 300px;
+}
+
+div.card:hover span.expand {
+	bottom: 10px;
+}
+
+div.card p {
+	margin: 0 0 15px 0;
+}
+
+div.card p.card-title {
+	font-size: 28px;
+}
+
+div.card p.url {
+	border-top: 1px solid #e5e5e5;
+	background-image: url('images/url.png');
+	background-repeat: no-repeat;
+	padding: 6px 0 0 30px;
+	height: 30px;
+	display: block;
+	margin-bottom: -10px;
+}
+
+div.card a {
+	color: #04bff4;
+	text-decoration: none;
+}
+
+div.card .info {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+div.card p.url a {
+	font-size: large;
+	top: 4px;
+	display: block;
+}
+
+div.card.primary p.url a {
+	width: 485px;
+}
+
+div.card.even p.url a {
+	width: 385px;
+}
+
+div.card.secondary p.url a {
+	width: 285px;
+}
+
+div.card img.full {
+	margin: 0 0 15px -15px;
+}
+
+div.card.primary img.full {
+	width: 530px;
+}
+
+div.card.even img.full {
+	width: 430px;
+}
+
+div.card.secondary img.full {
+	width: 330px;
+}
+
+div.innercard {
+	border: 0;
+	padding: 0;
+}
+
+/* Fade the bottom of collapsed cards */
+div.fade {
+	position: absolute;
+	bottom: 0em;
+	width: 100%;
+	margin: 0 0 0 -15px;
+	height: 5em;
+	
+	background: -webkit-linear-gradient(
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 1) 90%
+	);
+	background-image: -moz-linear-gradient(
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 1) 90%
+	);
+	background-image: -o-linear-gradient(
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 1) 90%
+	);
+	background-image: linear-gradient(
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 1) 90%
+	);
+	background-image: -ms-linear-gradient(
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 1) 90%
+	);
+}
+
+span.expand {
+	display: block;
+	text-align: center;
+	position: absolute;
+	width: 50px;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -30px;
+	cursor: pointer;
+	font-family: Open Sans;
+	font-size: xx-large;
+	
+	/* transitions */
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+div.contracted {
+	display: block;
+	
+	/* transitions */
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+div.expanded {
+	display: none;
+	
+	/* transitions */
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}

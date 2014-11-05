@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--#include file="content/templates/head.html"-->
+		<title>WebCards</title>
+	</head>
+	<body onload="loadCards()">
+		<div id="topMenu">
+			<span>WebCards</span>
+		</div>
+		<div id="cards">
+			<ul class="gNow primary">
+				<li>
+					<div class="card primary startExpanded" id="Main">
+						<!--#include file="content/cards/index/primary/main.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card primary" id="LargeCard">
+						<!--#include file="content/cards/index/primary/large.html"-->
+					</div>
+				</li>
+			</ul>
+			<ul class="gNow secondary">
+				<li>
+					<div class="card secondary startExpanded" id="Social">
+						<!--#include file="content/cards/index/secondary/social.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card secondary" id="Extralife">
+						<!--#include file="content/cards/index/secondary/extra-life.html"-->
+					</div>
+				</li>
+				<li>
+					<div class="card secondary" id="Credits">
+						<!--#include file="content/cards/index/secondary/credits.html"-->
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--#include file="content/templates/footer.html"-->
+	</body>
+</html>
